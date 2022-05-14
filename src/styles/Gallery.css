@@ -1,7 +1,21 @@
+
+.galleryDiv {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .carouselDiv{
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+    margin: 2em;
+    width: 25%;
 
 }

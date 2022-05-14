@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import '../styles/Gallery.css';
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -6,18 +6,18 @@ import Carousel from 'react-bootstrap/Carousel';
 const data = [
     {
         image: require('../images/download.jpeg'),
-        caption:"Caption",
-        description:"Description Here"
+        caption: "Caption",
+        description: "Description Here"
     },
     {
         image: require('../images/download (1).jpeg'),
-        caption:"Caption",
-        description:"Description Here"
+        caption: "Caption",
+        description: "Description Here"
     },
     {
         image: require('../images/download (2).jpeg'),
-        caption:"Caption",
-        description:"Description Here"
+        caption: "Caption",
+        description: "Description Here"
     }
 ]
 
@@ -30,25 +30,146 @@ function Gallery() {
     };
 
     return (
-        <div className='carouselDiv'>
-        <Carousel activeIndex={index} onSelect={handleSelect}interval={2000} pause={false}  >
-            {data.map((slide, i) => {
-                return (
-                    <Carousel.Item>
-                        <img 
-                        className="d-block "
-                        src={slide.image}
-                        alt="one"
-                        />
-                        <Carousel.Caption>
-                            <h3>{slide.caption}</h3>
-                            <p>{slide.description}</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                )
-            })}
-        </Carousel></div>
+        <div className='galDiv'>
+            <div className='galleryDiv'>
 
+                <div className='carouselDiv'>
+                    <h1>Fulshear, Texas</h1>
+                    <br></br>
+                    <Carousel activeIndex={index} onSelect={handleSelect} interval={2000} >
+                        {data.map((slide, i) => {
+                            return (
+                                <Carousel.Item>
+                                    <img
+                                        className="d-block "
+                                        src={slide.image}
+                                        alt="one"
+                                    />
+                                    <Carousel.Caption>
+                                        <h3>{slide.caption}</h3>
+                                        <p>{slide.description}</p>
+                                    </Carousel.Caption>
+                                </Carousel.Item>
+                            )
+                        })}
+                    </Carousel></div>
+
+                <div className='carouselDiv'>
+                    <h1>Greater Heights, Houston Texas
+                    </h1>
+                    <br />
+                    <Carousel activeIndex={index} onSelect={handleSelect} interval={2500} pause={false}  >
+                        {data.map((slide, i) => {
+                            return (
+                                <Carousel.Item>
+                                    <img
+                                        className="d-block "
+                                        src={slide.image}
+                                        alt="one"
+                                    />
+                                    <Carousel.Caption>
+                                        <h3>{slide.caption}</h3>
+                                        <p>{slide.description}</p>
+                                    </Carousel.Caption>
+                                </Carousel.Item>
+                            )
+                        })}
+                    </Carousel></div>
+
+
+                <div className='carouselDiv'>
+                    <h1>League City, Texas</h1>
+                    <br />
+                    <Carousel activeIndex={index} onSelect={handleSelect} interval={7000} pause={false}  >
+                        {data.map((slide, i) => {
+                            return (
+                                <Carousel.Item>
+                                    <img
+                                        className="d-block "
+                                        src={slide.image}
+                                        alt="one"
+                                    />
+                                    <Carousel.Caption>
+                                        <h3>{slide.caption}</h3>
+                                        <p>{slide.description}</p>
+                                    </Carousel.Caption>
+                                </Carousel.Item>
+                            )
+                        })}
+                    </Carousel></div>
+
+            </div>
+
+            <div className='galleryDiv'>
+
+                <div className='carouselDiv'>
+                    <h1>Fulshear, Texas</h1>
+                    <br />
+                    <Carousel activeIndex={index} onSelect={handleSelect} interval={2000} >
+                        {data.map((slide, i) => {
+                            return (
+                                <Carousel.Item>
+                                    <img
+                                        className="d-block "
+                                        src={slide.image}
+                                        alt="one"
+                                    />
+                                    <Carousel.Caption>
+                                        <h3>{slide.caption}</h3>
+                                        <p>{slide.description}</p>
+                                    </Carousel.Caption>
+                                </Carousel.Item>
+                            )
+                        })}
+                    </Carousel></div>
+
+                <div className='carouselDiv'>
+                    <h1>Greater Heights, Houston Texas
+                    </h1>
+                    <br />
+
+                    <Carousel activeIndex={index} onSelect={handleSelect} interval={2500} pause={false}  >
+                        {data.map((slide, i) => {
+                            return (
+                                <Carousel.Item>
+                                    <img
+                                        className="d-block "
+                                        src={slide.image}
+                                        alt="one"
+                                    />
+                                    <Carousel.Caption>
+                                        <h3>{slide.caption}</h3>
+                                        <p>{slide.description}</p>
+                                    </Carousel.Caption>
+                                </Carousel.Item>
+                            )
+                        })}
+                    </Carousel></div>
+
+
+                <div className='carouselDiv'>
+                    <h1>League City, Texas</h1>
+                    <br />
+                    <Carousel activeIndex={index} onSelect={handleSelect} interval={7000} pause={false}  >
+                        {data.map((slide, i) => {
+                            return (
+                                <Carousel.Item>
+                                    <img
+                                        className="d-block "
+                                        src={slide.image}
+                                        alt="one"
+                                    />
+                                    <Carousel.Caption>
+                                        <h3>{slide.caption}</h3>
+                                        <p>{slide.description}</p>
+                                    </Carousel.Caption>
+                                </Carousel.Item>
+                            )
+                        })}
+                    </Carousel></div>
+
+            </div>
+        </div>
     );
 }
 
