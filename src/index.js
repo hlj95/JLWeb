@@ -5,8 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import BaseLayout from './components/BaseLayout';
 import Home from './components/Home.js';
-import Contact from './components/Contact.js';
-
+import About from './components/About'
 import Gallery from './components/Gallery.js';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -19,7 +18,7 @@ root.render(
         <BaseLayout>
           <Routes>
             <Route element={ < Home /> }  exact path="/" />
-            <Route element={ < Contact /> } path="/contact" />
+            <Route element={ < About /> } path="/about" />
             <Route element={ <Gallery/>} path="/gallery"/>
           </Routes>
         </BaseLayout>

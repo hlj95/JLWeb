@@ -11,13 +11,13 @@ function Navigation() {
         <div className="navbar">
 
 
-            <Navbar fixed="top"bg="dark" variant="dark" className='navbar'>
+            <Navbar fixed="top" variant="dark" >
                 <Container>
-                    <Navbar.Brand >1,2,3,4  Painting & 'Mo</Navbar.Brand>
+                    <Navbar.Brand className='logo' >J.C.L. Painting</Navbar.Brand>
 
                         <Nav>
                             <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="/contact">Contact</Nav.Link>
+                            <Nav.Link href="/about">About Us</Nav.Link>
                             <Nav.Link href="/gallery">Gallery</Nav.Link>
                         </Nav>
 

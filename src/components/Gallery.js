@@ -82,50 +82,8 @@ function Gallery() {
 
             <div className='galleryDiv'>
 
-                <div className='carouselDiv'>
-                    <h1>Greater Heights, Houston Texas
-                    </h1>
-                    <br />
-
-                    <Carousel activeIndex={index} onSelect={handleSelect} interval={2500} pause={false}  >
-                        {data.map((slide, i) => {
-                            return (
-                                <Carousel.Item>
-                                    <img
-                                        className="d-block "
-                                        src={slide.image}
-                                        alt="one"
-                                    />
-                                    <Carousel.Caption>
-                                        <h3>{slide.caption}</h3>
-                                        <p>{slide.description}</p>
-                                    </Carousel.Caption>
-                                </Carousel.Item>
-                            )
-                        })}
-                    </Carousel></div>
 
 
-                <div className='carouselDiv'>
-                    <h1>League City, Texas</h1>
-                    <br />
-                    <Carousel activeIndex={index} onSelect={handleSelect} interval={7000} pause={false}  >
-                        {data.map((slide, i) => {
-                            return (
-                                <Carousel.Item>
-                                    <img
-                                        className="d-block "
-                                        src={slide.image}
-                                        alt="one"
-                                    />
-                                    <Carousel.Caption>
-                                        <h3>{slide.caption}</h3>
-                                        <p>{slide.description}</p>
-                                    </Carousel.Caption>
-                                </Carousel.Item>
-                            )
-                        })}
-                    </Carousel></div>
 
             </div>
         </div>
