@@ -5,8 +5,8 @@ function Contact() {
         return (
             <div className="div">
                 <div className="contactDiv">
-                <h1>Contact To Schedule A Free Quote
-                    !</h1>
+                <h3>Contact To Schedule A Free Quote
+                    !</h3>
       
                   
                     <div className="contactForm">
