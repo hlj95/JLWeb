@@ -13,7 +13,7 @@ function Navigation() {
 
             <Navbar  fixed="top" variant="dark" className='navbar' >
                 <Container>
-                    <Navbar.Brand className='logo' >J.C.L. Painting</Navbar.Brand>
+                    <Navbar.Brand className='logo' ><h2>J.C.L. Painting</h2></Navbar.Brand>
 
                     <Nav>
                         <Nav.Link href="/">Home</Nav.Link>

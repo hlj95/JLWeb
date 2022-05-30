@@ -37,7 +37,6 @@ function Gallery() {
                 <div className='carouselDiv'>
                     <h1>Greater Heights, Houston Texas
                     </h1>
-                    <br />
                     <Carousel activeIndex={index} onSelect={handleSelect} interval={2500} pause={false}  >
                         {data.map((slide, i) => {
                             return (

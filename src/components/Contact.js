@@ -1,30 +1,50 @@
 import React from "react";
 import '../styles/Contact.css';
 
+import {
+    MDBCard,
+    MDBCardBody,
+    MDBInput,
+    MDBCardFooter,
+    MDBBtn,
+    MDBIcon,
+    MDBTextArea,
+} from "mdb-react-ui-kit";
+
 function Contact() {
         return (
             <div className="div">
-                <div className="contactDiv">
-                <h3>Contact To Schedule A Free Quote
-                    !</h3>
+                <div className="contactDiv" 
+                >
+                <MDBCard >
+
+                <h3>Contact To Schedule A Free Quote!</h3>
+                    <MDBCardBody>
+
       
-                  
+
                     <div className="contactForm">
 
-                        <br></br>
-                        <input className="contactInput" required placeholder="Name:" type='text' label="username" invalid validation="Required Input" />
+                        <MDBInput className="input-fields" name="" required type="text" label="Name" invalid validation="Please provide your Name"/>
                         <br/>
-                        <input  className="contactInput" required placeholder="E-Mail:" type='text' label="username" invalid validation="Required Input" />
+                        <MDBInput className="input-fields"  name="" required type="text" label="Email" invalid validation="Please provide your email"/>
                         <br/>
-                        <input className="contactInput" required placeholder="Phone:" type='text' label="username" invalid validation="Required Input" />
+                        <MDBInput className="input-fields"  name="" required type="text" label="Phone" invalid validation="Please provide your phone"/>
                         <br/>
 
-                        <input className="contactInput" required placeholder="Name" type='text' label="username" invalid validation="Required Input" />
+                        <MDBTextArea className="input-fieldsTA"  name="" required type="text" label="Message" invalid validation="Please provide your email"/>
                         <br/>
-                        <input className="contactInput" required placeholder="Name" type='text' label="username" invalid validation="Required Input" />
 
+                        <MDBBtn>Send Msg</MDBBtn>
+                        <br/>
+
+                        <MDBBtn>Call Now!</MDBBtn>
                     </div>
-
+                    </MDBCardBody>
+                    <MDBCardFooter>
+                        <h4>We Service All Throughout HOUSTON!</h4>
+                    </MDBCardFooter>
+                        </MDBCard>
                 </div>
 
             </div>

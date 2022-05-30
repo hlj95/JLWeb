@@ -7,8 +7,9 @@ import BaseLayout from './components/BaseLayout';
 import Home from './components/Home.js';
 import About from './components/About'
 import Gallery from './components/Gallery.js';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
