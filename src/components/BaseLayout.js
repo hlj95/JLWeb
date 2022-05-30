@@ -2,14 +2,17 @@ import '../styles/BaseLayout.css'
 import Footer from './Footer'
 import Navigation from "./Nav"
 import Contact from './Contact'
+import Services from './Services'
 
 function BaseLayout(props) {
     return (
-        <div id="layout">
+        <div className="layout">
             
             <Navigation />
-            <Contact />
-            <div id="children">{props.children}</div>
+            <div className='blContact'><Contact /></div>
+            
+            
+            <div className="children">{props.children}</div>
             <br/>
             
             <Footer />

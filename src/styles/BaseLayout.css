@@ -7,10 +7,19 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
 }
 
 .children {
     height:auto;
-    overflow: scroll;
-    margin-top: 3em;
+    margin: 4em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 } 
+
+
+.blContact {
+    width: 100%;
+    
+}
