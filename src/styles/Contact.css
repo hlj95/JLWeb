@@ -1,6 +1,5 @@
 .contactDiv {
-    margin-top: 7em;
-    margin-left: 10em;
+margin:auto;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     height: fit-content;
@@ -36,13 +35,15 @@ h3 {
 .divC {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 8em;
 
 }
 
 .workList {
-    height: 10em;
+    height: fit-content;
     width: fit-content;
-    margin-top: 11em;
     margin-right: 3em;
     margin-left: 1em;
     background-color: rgba(0, 0, 0, 0.097);
@@ -55,6 +56,5 @@ h3 {
     padding: 1em;
     color: rgb(255, 255, 255);
     text-align: center;
-
 
 }

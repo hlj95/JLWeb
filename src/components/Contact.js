@@ -53,7 +53,12 @@ function Contact() {
                 <h4>
                     Residential / Commercial
                 </h4>
-                <h5>Interior / Exterior Painting</h5>
+                <h4>Interior / Exterior Painting</h4>
+                <h4>Whole House Painting</h4>
+                <h4>Paint, Trim, Caulk</h4>
+                <h4>Drywall Repair & Repaint</h4>
+                <h4>Ceiling Textures & Paint</h4>
+                <h4>Tape, Bed, & Texture</h4>
             </div>
         </div>
     )
