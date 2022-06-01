@@ -2,7 +2,6 @@ import '../styles/BaseLayout.css'
 import Footer from './Footer'
 import Navigation from "./Nav"
 import Contact from './Contact'
-import Services from './Services'
 
 function BaseLayout(props) {
     return (

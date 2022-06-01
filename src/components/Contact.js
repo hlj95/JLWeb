@@ -7,7 +7,6 @@ import {
     MDBInput,
     MDBCardFooter,
     MDBBtn,
-    MDBIcon,
     MDBTextArea,
 } from "mdb-react-ui-kit";
 
@@ -25,11 +24,11 @@ function Contact() {
 
                         <div className="contactForm">
 
-                            <MDBInput className="input-fields" name="" required type="text" label="Name" invalid validation="Please provide your Name" />
+                            <MDBInput className="input-fieldsC" name="" required type="text" label="Name" invalid validation="Please provide your Name" />
                             <br />
-                            <MDBInput className="input-fields" name="" required type="text" label="Email" invalid validation="Please provide your email" />
+                            <MDBInput className="input-fieldsC" name="" required type="text" label="Email" invalid validation="Please provide your email" />
                             <br />
-                            <MDBInput className="input-fields" name="" required type="text" label="Phone" invalid validation="Please provide your phone" />
+                            <MDBInput className="input-fieldsC" name="" required type="text" label="Phone" invalid validation="Please provide your phone" />
                             <br />
 
                             <MDBTextArea className="input-fieldsTA" name="" required type="text" label="Message" invalid validation="Please provide your email" />
@@ -46,19 +45,19 @@ function Contact() {
                     </MDBCardFooter>
                 </MDBCard>
             </div>
+
+
+
             <div className="workList">
-                <h1>
-                    Proud Houston Provider
-                </h1>
-                <h4>
+                
+                   <h1> <b>Proud Houston Provider</b></h1>
                     Residential / Commercial
-                </h4>
-                <h4>Interior / Exterior Painting</h4>
-                <h4>Whole House Painting</h4>
-                <h4>Paint, Trim, Caulk</h4>
-                <h4>Drywall Repair & Repaint</h4>
-                <h4>Ceiling Textures & Paint</h4>
-                <h4>Tape, Bed, & Texture</h4>
+                    <br/>Interior / Exterior Painting
+                    <br/>Whole House Painting
+                <br/>Paint, Trim, Caulk
+                <br/>Drywall Repair & Repaint 
+                <br/>Ceiling Textures & Paint
+                <br/>Tape, Bed, & Texture
             </div>
         </div>
     )

@@ -1,26 +1,9 @@
-
-.galleryDiv {
-    margin-top: 4em;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width:100%;
-    background-color: aliceblue;
-
-}
-
-
-.carouselDiv{
+.carouselDiv {
+    height: 20em;
+    width: 20em;
+    margin: auto;
     display: flex;
     flex-direction: row;
-    align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 7em;
-    width: 25%;
+}
 
-}
-.carouselDiv img{
-    width:25em;
-    height:25em;
-}

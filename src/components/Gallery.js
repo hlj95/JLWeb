@@ -1,92 +1,82 @@
-import React, { useState } from 'react';
-import '../styles/Gallery.css';
-import Carousel from 'react-bootstrap/Carousel';
-
-
-const data = [
-    {
-        image: require('../images/download (3).jpeg'),
-        caption: "Caption",
-        description: "Description Here"
-    },
-    {
-        image: require('../images/download (1).png'),
-        caption: "Caption",
-        description: "Description Here"
-    },
-    {
-        image: require('../images/download (2).jpeg'),
-        caption: "Caption",
-        description: "Description Here"
-    }
-]
+import React from 'react';
+import {
+  MDBCarousel,
+  MDBCarouselInner,
+  MDBCarouselItem,
+  MDBCarouselElement,
+  MDBCarouselCaption,
+} from 'mdb-react-ui-kit';
+import '../styles/Gallery.css'
 
 
 function Gallery() {
-
-    const [index, setIndex] = useState(0);
-    const handleSelect = (selectedIndex, e) => {
-        setIndex(selectedIndex);
-    };
-
-    return (
-        <div className='galDiv'>
-            <div className='galleryDiv'>
+  return (<div className='carouselDiv'>
 
 
-                <div className='carouselDiv'>
-                    <h1>Greater Heights, Houston Texas
-                    </h1>
-                    <Carousel activeIndex={index} onSelect={handleSelect} interval={2500} pause={false}  >
-                        {data.map((slide, i) => {
-                            return (
-                                <Carousel.Item>
-                                    <img
-                                        className="d-block "
-                                        src={slide.image}
-                                        alt="one"
-                                    />
-                                    <Carousel.Caption>
-                                        <h3>{slide.caption}</h3>
-                                        <p>{slide.description}</p>
-                                    </Carousel.Caption>
-                                </Carousel.Item>
-                            )
-                        })}
-                    </Carousel></div>
+    <MDBCarousel showIndicators showControls fade className='carB'>
+      <MDBCarouselInner>
+        <MDBCarouselItem className='active'>
+          <MDBCarouselElement src='https://images.unsplash.com/photo-1654060183727-34be28910e14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80' alt='...' />
+
+          <MDBCarouselCaption>
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </MDBCarouselCaption>
+        </MDBCarouselItem>
+
+        <MDBCarouselItem>
+          <MDBCarouselElement src='https://images.unsplash.com/photo-1654060183727-34be28910e14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80' alt='...' />
+          <MDBCarouselCaption>
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </MDBCarouselCaption>
+        </MDBCarouselItem>
+
+        <MDBCarouselItem>
+          <MDBCarouselElement src='https://images.unsplash.com/photo-1654060183677-c4c053709aa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80' alt='...' />
+          <MDBCarouselCaption>
+            <h5>Third slide label</h5>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </MDBCarouselCaption>
+        </MDBCarouselItem>
+      </MDBCarouselInner>
+    </MDBCarousel>
 
 
-                <div className='carouselDiv'>
-                    <h1>Fulshear, Texas</h1>
-                    <br />
-                    <Carousel activeIndex={index} onSelect={handleSelect} interval={7000} pause={false}  >
-                        {data.map((slide, i) => {
-                            return (
-                                <Carousel.Item>
-                                    <img
-                                        className="d-block "
-                                        src={slide.image}
-                                        alt="one"
-                                    />
-                                    <Carousel.Caption>
-                                        <h3>{slide.caption}</h3>
-                                        <p>{slide.description}</p>
-                                    </Carousel.Caption>
-                                </Carousel.Item>
-                            )
-                        })}
-                    </Carousel></div>
+    <MDBCarousel showIndicators showControls fade className='carB'>
+      <MDBCarouselInner>
+        <MDBCarouselItem className='active'>
+          <MDBCarouselElement src='https://images.unsplash.com/photo-1654060183727-34be28910e14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80' alt='...' />
 
-            </div>
+          <MDBCarouselCaption>
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </MDBCarouselCaption>
+        </MDBCarouselItem>
 
-            <div className='galleryDiv'>
+        <MDBCarouselItem>
+          <MDBCarouselElement src='https://images.unsplash.com/photo-1654060183727-34be28910e14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80' alt='...' />
+          <MDBCarouselCaption>
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </MDBCarouselCaption>
+        </MDBCarouselItem>
+
+        <MDBCarouselItem>
+          <MDBCarouselElement src='https://images.unsplash.com/photo-1654060183677-c4c053709aa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80' alt='...' />
+          <MDBCarouselCaption>
+            <h5>Third slide label</h5>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </MDBCarouselCaption>
+        </MDBCarouselItem>
+      </MDBCarouselInner>
+    </MDBCarousel>
 
 
 
-
-            </div>
-        </div>
-    );
+  </div>
+  );
 }
 
-export default Gallery;
+
+export default Gallery
